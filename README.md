@@ -143,4 +143,3 @@ python -m unittest Puzzle2/test/SolutionTest.py
 - **FileNotFoundError**: Logs an error if the file specified is not found.
 - **IOError**: Catches input/output errors during file reading.
 - **General Exception**: Any unexpected errors will be logged with traceback information.
-```
