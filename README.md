@@ -64,7 +64,7 @@ AdventofCode/
    Enter the name of the file to read (from 'resources' folder): input.txt
    ```
 
-3. The script will get the first and last digits of each line in the file then concatenates them and calculate the sum of the all the concatinated values and display the result.
+3. The script will get the first and last digits of each line in the file, then concatenates them and calculates the sum of all the concatenated values and displays the result.
 
 4. If an error occurs, it will be logged, and you can check the log for more details.
 
@@ -84,9 +84,9 @@ Total sum: 119
 ```
 
 ### How it works:
-- On the first line: first digit → 1 and last digit → 2. Then concat both first digit and last digit then we get 12.
-- On the second line: first digit → 3 and last digit → 5. Then concat both first digit and last digit then we get 35.
-- On the third line: first digit → 6 and last digit → 6. Then concat both first digit and last digit then we get 66.
+- On the first line: first digit → 1 and last digit → 2. Then concat both first digit and last digit to get 12.
+- On the second line: first digit → 3 and last digit → 5. Then concat both first digit and last digit to get 35.
+- On the third line: first digit → 6 and last digit → 6. Then concat both first digit and last digit to get 66.
 
 The total sum = 12 + 35 + 66 = 113.
 
@@ -103,14 +103,14 @@ The total sum = 12 + 35 + 66 = 113.
    Enter the name of the file to read (from 'resources' folder): input.txt
    ```
 
-3. The script will get the first and last digits or digit words of each line in the file then concatenates them and calculate the sum of the all the concatinated values and display the result.
+3. The script will get the first and last digits or digit words of each line in the file, then concatenates them and calculates the sum of all the concatenated values and displays the result.
    
 4. If an error occurs, it will be logged, and you can check the log for more details.
 
 
 ## Example
 
-### Input file (`Puzzle1/resources/input.txt`):
+### Input file (`Puzzle2/resources/input.txt`):
 ```
 two1nine
 eightwothree
@@ -123,9 +123,9 @@ Total sum: 125
 ```
 
 ### How it works:
-- On the first line: first digit or digit word → 2 (two) and last digit or digit word → 9 (nine). Then concat both first and last digits or digit words then we get 29.
-- On the second line: first digit or digit word → 8 (eight) and last digit or digit word → 3 (three). Then concat both first and last digits or digit words then we get 83.
-- On the third line: first digit or digit word → 1 (one) and last digit or digit word → 3 (three). Then concat both first and last digits or digit words then we get 13.
+- On the first line: first digit or digit word → 2 (two) and last digit or digit word → 9 (nine). Then concat both first and last digits or digit words to get 29.
+- On the second line: first digit or digit word → 8 (eight) and last digit or digit word → 3 (three). Then concat both first and last digits or digit words to get 83.
+- On the third line: first digit or digit word → 1 (one) and last digit or digit word → 3 (three). Then concat both first and last digits or digit words to get 13.
 
 The total sum = 29 + 83 + 13 = 125.
 
@@ -143,3 +143,4 @@ python -m unittest Puzzle2/test/SolutionTest.py
 - **FileNotFoundError**: Logs an error if the file specified is not found.
 - **IOError**: Catches input/output errors during file reading.
 - **General Exception**: Any unexpected errors will be logged with traceback information.
+```
