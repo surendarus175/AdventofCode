@@ -15,7 +15,7 @@ class TestExtractAndSum(unittest.TestCase):
         """Create a temporary file for testing."""
         self.test_file = "test_input.txt"
 
-    def cleanUp(self):
+    def tearDown(self):
         """Remove the temporary file after tests are done."""
         if os.path.exists(self.test_file):
             os.remove(self.test_file)
